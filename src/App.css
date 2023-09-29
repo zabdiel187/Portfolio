@@ -3,13 +3,22 @@
 }
 
 body {
-
     margin: 0;
+}
+.PageBlack {
+    margin: 0px;
+    height: auto;
     color: white;
     cursor: text;
-
+    background-color: #383838;  
 }
 
+.PageWhite {
+    margin: 0px;
+    color: #383838;
+    cursor: text;
+    background-color: white;  
+}
 .Navbar-black {
     display: flex;
     flex-direction: row;
@@ -178,11 +187,17 @@ input:checked + label:after {
 }
 
 
-.projectsPage-active {
-    display: all;
-}
+
 .homePage-active {
     display: all;
+}
+.projectsPage-active {
+    display: all;
+    position: relative;
+    background-color: #383838;  
+    color: white;
+    margin: 0;
+
 }
 .resumePage-active {
     display: all;
@@ -191,8 +206,16 @@ input:checked + label:after {
     display: all;
 }
 
-.container {
+.containerBlack {
     background-color: #383838;  
     color: white;
-    height: 100vh;
+    margin: 0;
+    height: 95vh;
+}
+
+.containerWhite {
+    background-color: white;  
+    color: #383838;
+    margin: 0;
+    height: 95vh;
 }

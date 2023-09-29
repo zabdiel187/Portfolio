@@ -76,7 +76,7 @@ function Home() {
     }
 
     return (
-        <>
+        <div className={whiteTheme ? "PageWhite" : "PageBlack"}>
             <div className={whiteTheme ? "Navbar-white" : "Navbar-black"}>
                     <div className="nav">
                         <div className={ homePage ? whiteTheme ? "nav-white-active" : "nav-black-active" : whiteTheme ? "nav-white-link" : "nav-black-link"} onClick={() => handleHomePage()}>home.html</div>
@@ -92,33 +92,33 @@ function Home() {
             </div>
             
             <div className={homePage ? "homePage-active" : "homePage"}>
-                <div className="container">
+                <div className={ whiteTheme ? "containerWhite" : "containerBlack"}>
                     <div className={whiteTheme ? "whiteHeader" : "Header"}>
                         <span className="Hello"><FirstComponent className="text" /></span>        
-                        {secondComponentReady ? ( <SecondComponent className="text"/>) : ( <p></p> )}
-                        {thirdComponentReady ? (<ThirdComponent className="text" />) : (<p></p>)}
+                        {secondComponentReady ? ( <SecondComponent className="text"/>) : ( null )}
+                        {thirdComponentReady ? (<ThirdComponent className="text" />) : (null)}
                     </div>
                 </div>
             </div>
 
             <div className={projectPage ? "projectsPage-active" : "projectsPage"}>
-                <div className="container">
+                <div className={ whiteTheme ? "containerWhite" : "containerBlack"}>
                     <h1> Projects Page</h1>
                 </div>
             </div>
 
             <div className={resumePage ? "resumePage-active" : "resumePage"}>
-                <div className="container">
+                <div className={ whiteTheme ? "containerWhite" : "containerBlack"}>
                     <h1>Resume Page</h1>
                 </div>
             </div>
 
             <div className={ contactPage ? "contactPage-active" : "contactPage"}>
-                <div className="container">
+                <div className={ whiteTheme ? "containerWhite" : "containerBlack"}>
                     <h1>Contact Page</h1>
                 </div>
             </div>
-    </>
+    </div>
   );
 }
 
