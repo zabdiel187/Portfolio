@@ -28,12 +28,17 @@ body {
 .nav-black-link {
     padding: 5px 20px;
     cursor: pointer;
+    text-decoration: none;
+    color: white;
 }
 
 .nav-black-active {
     padding: 10px 20px;
     background-color: #383838;
     cursor: pointer;
+    text-decoration: none;
+    color: white;
+
 }
 
 .Navbar-white {
@@ -49,6 +54,7 @@ body {
 .nav-white-link {
     padding: 5px 20px;
     cursor: pointer;
+    color: #383838;
 
 }
 
@@ -95,6 +101,7 @@ body {
 }
 
 .Hello {
+    font-size: 80px;
 }
 
 
@@ -104,7 +111,6 @@ body {
 input[type=checkbox]{
   height: 0;
   width: 0;
-  visibility: hidden;
 }
 
 label {
@@ -145,9 +151,48 @@ input:checked + label:after {
 
 
 
+.hideIcon {
+    display: none;
+}
 
+.showIcon {
+    margin-top: 200px;
+}
 
 .fa {
     color: white;
-    scale: 140%;
+    scale: 200%;
+}
+
+.homePage {
+    display: none;
+}
+.projectsPage {
+    display: none;
+}
+.resumePage {
+    display: none;
+}
+.contactPage {
+    display: none;
+}
+
+
+.projectsPage-active {
+    display: all;
+}
+.homePage-active {
+    display: all;
+}
+.resumePage-active {
+    display: all;
+}
+.contactPage-active {
+    display: all;
+}
+
+.container {
+    background-color: #383838;  
+    color: white;
+    height: 100vh;
 }
